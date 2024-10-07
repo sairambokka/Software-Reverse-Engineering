@@ -1,0 +1,378 @@
+
+struct_array_combo.so:     file format elf64-x86-64
+
+Sections:
+Idx Name          Size      VMA               LMA               File off  Algn
+  0 .note.gnu.property 00000020  00000000000002a8  00000000000002a8  000002a8  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .note.gnu.build-id 00000024  00000000000002c8  00000000000002c8  000002c8  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .gnu.hash     00000024  00000000000002f0  00000000000002f0  000002f0  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .dynsym       00000090  0000000000000318  0000000000000318  00000318  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .dynstr       00000060  00000000000003a8  00000000000003a8  000003a8  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .rela.dyn     000000a8  0000000000000408  0000000000000408  00000408  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  6 .init         0000001b  0000000000001000  0000000000001000  00001000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  7 .plt          00000010  0000000000001020  0000000000001020  00001020  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  8 .plt.got      00000010  0000000000001030  0000000000001030  00001030  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  9 .text         000000e3  0000000000001040  0000000000001040  00001040  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 10 .fini         0000000d  0000000000001124  0000000000001124  00001124  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 11 .eh_frame_hdr 00000024  0000000000002000  0000000000002000  00002000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 12 .eh_frame     0000007c  0000000000002028  0000000000002028  00002028  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 13 .init_array   00000008  0000000000003e80  0000000000003e80  00002e80  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 14 .fini_array   00000008  0000000000003e88  0000000000003e88  00002e88  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 15 .dynamic      00000150  0000000000003e90  0000000000003e90  00002e90  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 16 .got          00000020  0000000000003fe0  0000000000003fe0  00002fe0  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 17 .got.plt      00000018  0000000000004000  0000000000004000  00003000  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 18 .data         00000008  0000000000004018  0000000000004018  00003018  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 19 .bss          00000010  0000000000004020  0000000000004020  00003020  2**2
+                  ALLOC
+ 20 .comment      0000002b  0000000000000000  0000000000000000  00003020  2**0
+                  CONTENTS, READONLY
+ 21 .debug_aranges 00000030  0000000000000000  0000000000000000  0000304b  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 22 .debug_info   00000114  0000000000000000  0000000000000000  0000307b  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 23 .debug_abbrev 000000bc  0000000000000000  0000000000000000  0000318f  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 24 .debug_line   00000055  0000000000000000  0000000000000000  0000324b  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 25 .debug_str    00000101  0000000000000000  0000000000000000  000032a0  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 26 .debug_line_str 0000006f  0000000000000000  0000000000000000  000033a1  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+0000000000000000 l    df *ABS*	0000000000000000 crtstuff.c
+0000000000001040 l     F .text	0000000000000000 deregister_tm_clones
+0000000000001070 l     F .text	0000000000000000 register_tm_clones
+00000000000010b0 l     F .text	0000000000000000 __do_global_dtors_aux
+0000000000004020 l     O .bss	0000000000000001 completed.0
+0000000000003e88 l     O .fini_array	0000000000000000 __do_global_dtors_aux_fini_array_entry
+00000000000010f0 l     F .text	0000000000000000 frame_dummy
+0000000000003e80 l     O .init_array	0000000000000000 __frame_dummy_init_array_entry
+0000000000000000 l    df *ABS*	0000000000000000 struct_array_combo.c
+0000000000004024 l     O .bss	0000000000000004 index.1
+0000000000004028 l     O .bss	0000000000000004 result.0
+0000000000000000 l    df *ABS*	0000000000000000 crtstuff.c
+00000000000020a0 l     O .eh_frame	0000000000000000 __FRAME_END__
+0000000000000000 l    df *ABS*	0000000000000000 
+0000000000003e90 l     O .dynamic	0000000000000000 _DYNAMIC
+0000000000004020 l     O .data	0000000000000000 __TMC_END__
+0000000000004018 l     O .data	0000000000000000 __dso_handle
+0000000000001000 l     F .init	0000000000000000 _init
+0000000000002000 l       .eh_frame_hdr	0000000000000000 __GNU_EH_FRAME_HDR
+0000000000001124 l     F .fini	0000000000000000 _fini
+0000000000004000 l     O .got.plt	0000000000000000 _GLOBAL_OFFSET_TABLE_
+0000000000000000  w      *UND*	0000000000000000 __cxa_finalize
+0000000000000000  w      *UND*	0000000000000000 _ITM_registerTMCloneTable
+0000000000000000  w      *UND*	0000000000000000 _ITM_deregisterTMCloneTable
+00000000000010f9 g     F .text	000000000000002a demo_combo
+0000000000000000  w      *UND*	0000000000000000 __gmon_start__
+
+
+Contents of section .note.gnu.property:
+ 02a8 04000000 10000000 05000000 474e5500  ............GNU.
+ 02b8 020000c0 04000000 03000000 00000000  ................
+Contents of section .note.gnu.build-id:
+ 02c8 04000000 14000000 03000000 474e5500  ............GNU.
+ 02d8 ee406b5e f1da24d8 8bfa2622 233bf974  .@k^..$...&"#;.t
+ 02e8 5c462c97                             \F,.            
+Contents of section .gnu.hash:
+ 02f0 02000000 05000000 01000000 06000000  ................
+ 0300 00000000 20000002 00000000 05000000  .... ...........
+ 0310 7969479c                             yiG.            
+Contents of section .dynsym:
+ 0318 00000000 00000000 00000000 00000000  ................
+ 0328 00000000 00000000 46000000 20000000  ........F... ...
+ 0338 00000000 00000000 00000000 00000000  ................
+ 0348 2c000000 20000000 00000000 00000000  ,... ...........
+ 0358 00000000 00000000 10000000 20000000  ............ ...
+ 0368 00000000 00000000 00000000 00000000  ................
+ 0378 01000000 20000000 00000000 00000000  .... ...........
+ 0388 00000000 00000000 55000000 12000a00  ........U.......
+ 0398 f9100000 00000000 2a000000 00000000  ........*.......
+Contents of section .dynstr:
+ 03a8 005f5f67 6d6f6e5f 73746172 745f5f00  .__gmon_start__.
+ 03b8 5f49544d 5f646572 65676973 74657254  _ITM_deregisterT
+ 03c8 4d436c6f 6e655461 626c6500 5f49544d  MCloneTable._ITM
+ 03d8 5f726567 69737465 72544d43 6c6f6e65  _registerTMClone
+ 03e8 5461626c 65005f5f 6378615f 66696e61  Table.__cxa_fina
+ 03f8 6c697a65 0064656d 6f5f636f 6d626f00  lize.demo_combo.
+Contents of section .rela.dyn:
+ 0408 803e0000 00000000 08000000 00000000  .>..............
+ 0418 f0100000 00000000 883e0000 00000000  .........>......
+ 0428 08000000 00000000 b0100000 00000000  ................
+ 0438 18400000 00000000 08000000 00000000  .@..............
+ 0448 18400000 00000000 e03f0000 00000000  .@.......?......
+ 0458 06000000 01000000 00000000 00000000  ................
+ 0468 e83f0000 00000000 06000000 02000000  .?..............
+ 0478 00000000 00000000 f03f0000 00000000  .........?......
+ 0488 06000000 03000000 00000000 00000000  ................
+ 0498 f83f0000 00000000 06000000 04000000  .?..............
+ 04a8 00000000 00000000                    ........        
+Contents of section .init:
+ 1000 f30f1efa 4883ec08 488b05e9 2f000048  ....H...H.../..H
+ 1010 85c07402 ffd04883 c408c3             ..t...H....     
+Contents of section .plt:
+ 1020 ff35e22f 0000f2ff 25e32f00 000f1f00  .5./....%./.....
+Contents of section .plt.got:
+ 1030 f30f1efa f2ff25a5 2f00000f 1f440000  ......%./....D..
+Contents of section .text:
+ 1040 488d3dd9 2f000048 8d05d22f 00004839  H.=./..H.../..H9
+ 1050 f8741548 8b05962f 00004885 c07409ff  .t.H.../..H..t..
+ 1060 e00f1f80 00000000 c30f1f80 00000000  ................
+ 1070 488d3da9 2f000048 8d35a22f 00004829  H.=./..H.5./..H)
+ 1080 fe4889f0 48c1ee3f 48c1f803 4801c648  .H..H..?H...H..H
+ 1090 d1fe7414 488b054d 2f000048 85c07408  ..t.H..M/..H..t.
+ 10a0 ffe0660f 1f440000 c30f1f80 00000000  ..f..D..........
+ 10b0 f30f1efa 803d652f 00000075 2b554883  .....=e/...u+UH.
+ 10c0 3d1a2f00 00004889 e5740c48 8b3d462f  =./...H..t.H.=F/
+ 10d0 0000e859 ffffffe8 64ffffff c6053d2f  ...Y....d.....=/
+ 10e0 0000015d c30f1f00 c30f1f80 00000000  ...]............
+ 10f0 f30f1efa e977ffff fff30f1e fa554889  .....w.......UH.
+ 1100 e548897d f88b1519 2f000048 8b45f848  .H.}..../..H.E.H
+ 1110 63d20fb6 44d0090f bec08905 082f0000  c...D......../..
+ 1120 905dc3                               .].             
+Contents of section .fini:
+ 1124 f30f1efa 4883ec08 4883c408 c3        ....H...H....   
+Contents of section .eh_frame_hdr:
+ 2000 011b033b 24000000 03000000 20f0ffff  ...;$....... ...
+ 2010 40000000 30f0ffff 68000000 f9f0ffff  @...0...h.......
+ 2020 80000000                             ....            
+Contents of section .eh_frame:
+ 2028 14000000 00000000 017a5200 01781001  .........zR..x..
+ 2038 1b0c0708 90010000 24000000 1c000000  ........$.......
+ 2048 d8efffff 10000000 000e1046 0e184a0f  ...........F..J.
+ 2058 0b770880 003f1a3a 2a332422 00000000  .w...?.:*3$"....
+ 2068 14000000 44000000 c0efffff 10000000  ....D...........
+ 2078 00000000 00000000 1c000000 5c000000  ............\...
+ 2088 71f0ffff 2a000000 00450e10 8602430d  q...*....E....C.
+ 2098 06610c07 08000000 00000000           .a..........    
+Contents of section .init_array:
+ 3e80 f0100000 00000000                    ........        
+Contents of section .fini_array:
+ 3e88 b0100000 00000000                    ........        
+Contents of section .dynamic:
+ 3e90 0c000000 00000000 00100000 00000000  ................
+ 3ea0 0d000000 00000000 24110000 00000000  ........$.......
+ 3eb0 19000000 00000000 803e0000 00000000  .........>......
+ 3ec0 1b000000 00000000 08000000 00000000  ................
+ 3ed0 1a000000 00000000 883e0000 00000000  .........>......
+ 3ee0 1c000000 00000000 08000000 00000000  ................
+ 3ef0 f5feff6f 00000000 f0020000 00000000  ...o............
+ 3f00 05000000 00000000 a8030000 00000000  ................
+ 3f10 06000000 00000000 18030000 00000000  ................
+ 3f20 0a000000 00000000 60000000 00000000  ........`.......
+ 3f30 0b000000 00000000 18000000 00000000  ................
+ 3f40 03000000 00000000 00400000 00000000  .........@......
+ 3f50 07000000 00000000 08040000 00000000  ................
+ 3f60 08000000 00000000 a8000000 00000000  ................
+ 3f70 09000000 00000000 18000000 00000000  ................
+ 3f80 f9ffff6f 00000000 03000000 00000000  ...o............
+ 3f90 00000000 00000000 00000000 00000000  ................
+ 3fa0 00000000 00000000 00000000 00000000  ................
+ 3fb0 00000000 00000000 00000000 00000000  ................
+ 3fc0 00000000 00000000 00000000 00000000  ................
+ 3fd0 00000000 00000000 00000000 00000000  ................
+Contents of section .got:
+ 3fe0 00000000 00000000 00000000 00000000  ................
+ 3ff0 00000000 00000000 00000000 00000000  ................
+Contents of section .got.plt:
+ 4000 903e0000 00000000 00000000 00000000  .>..............
+ 4010 00000000 00000000                    ........        
+Contents of section .data:
+ 4018 18400000 00000000                    .@......        
+Contents of section .comment:
+ 0000 4743433a 20285562 756e7475 2031312e  GCC: (Ubuntu 11.
+ 0010 342e302d 31756275 6e747531 7e32322e  4.0-1ubuntu1~22.
+ 0020 30342920 31312e34 2e3000             04) 11.4.0.     
+Contents of section .debug_aranges:
+ 0000 2c000000 02000000 00000800 00000000  ,...............
+ 0010 f9100000 00000000 2a000000 00000000  ........*.......
+ 0020 00000000 00000000 00000000 00000000  ................
+Contents of section .debug_info:
+ 0000 10010000 05000108 00000000 05260000  .............&..
+ 0010 000c0000 00001500 0000f910 00000000  ................
+ 0020 00002a00 00000000 00000000 000003e9  ..*.............
+ 0030 00000008 01620000 00016100 02076200  .....b....a...b.
+ 0040 00000001 62000308 69000000 04016300  ....b...i.....c.
+ 0050 04086900 00000501 64000509 70000000  ..i.....d...p...
+ 0060 06000604 05696e74 00020106 f5000000  .....int........
+ 0070 020205c7 00000003 08000000 54089c00  ............T...
+ 0080 00000174 61670009 07620000 000007fa  ...tag...b......
+ 0090 00000001 0a169c00 00000400 082e0000  ................
+ 00a0 00ac0000 0009ac00 00000900 02080714  ................
+ 00b0 0000000a d1000000 010d0562 000000f9  ...........b....
+ 00c0 10000000 0000002a 00000000 00000001  .......*........
+ 00d0 9c0d0100 000b0000 0000010d 240d0100  ............$...
+ 00e0 00029168 04dc0000 000e6200 00000903  ...h......b.....
+ 00f0 28400000 00000000 04e30000 000f6200  (@............b.
+ 0100 00000903 24400000 00000000 000c0877  ....$@.........w
+ 0110 00000000                             ....            
+Contents of section .debug_abbrev:
+ 0000 010d0003 083a2101 3b0b390b 4913380b  .....:!.;.9.I.8.
+ 0010 00000224 000b0b3e 0b030e00 00031301  ...$...>........
+ 0020 030e0b0b 3a21013b 0b392108 01130000  ....:!.;.9!.....
+ 0030 04340003 0e3a2101 3b0b3921 0e491302  .4...:!.;.9!.I..
+ 0040 18000005 1101250e 130b031f 1b1f1101  ......%.........
+ 0050 12071017 00000624 000b0b3e 0b030800  .......$...>....
+ 0060 00070d00 030e3a0b 3b0b390b 4913380b  ......:.;.9.I.8.
+ 0070 00000801 01491301 13000009 21004913  .....I......!.I.
+ 0080 2f0b0000 0a2e013f 19030e3a 0b3b0b39  /......?...:.;.9
+ 0090 0b271949 13110112 0740187a 19011300  .'.I.....@.z....
+ 00a0 000b0500 030e3a0b 3b0b390b 49130218  ......:.;.9.I...
+ 00b0 00000c0f 000b0b49 13000000           .......I....    
+Contents of section .debug_line:
+ 0000 51000000 05000800 2a000000 010101fb  Q.......*.......
+ 0010 0e0d0001 01010100 00000100 00010101  ................
+ 0020 1f011500 00000201 1f020f02 00000000  ................
+ 0030 00000000 00000539 000902f9 10000000  .......9........
+ 0040 00000003 0c01052e bd050a08 4a050167  ............J..g
+ 0050 02030001 01                          .....           
+Contents of section .debug_str:
+ 0000 70747250 6172616d 4f757465 72537472  ptrParamOuterStr
+ 0010 75637400 6c6f6e67 20756e73 69676e65  uct.long unsigne
+ 0020 6420696e 7400474e 55204339 39203131  d int.GNU C99 11
+ 0030 2e342e30 202d6d74 756e653d 67656e65  .4.0 -mtune=gene
+ 0040 72696320 2d6d6172 63683d78 38362d36  ric -march=x86-6
+ 0050 34202d67 202d4f30 202d7374 643d6339  4 -g -O0 -std=c9
+ 0060 39202d66 50494320 2d666173 796e6368  9 -fPIC -fasynch
+ 0070 726f6e6f 75732d75 6e77696e 642d7461  ronous-unwind-ta
+ 0080 626c6573 202d6673 7461636b 2d70726f  bles -fstack-pro
+ 0090 74656374 6f722d73 74726f6e 67202d66  tector-strong -f
+ 00a0 73746163 6b2d636c 6173682d 70726f74  stack-clash-prot
+ 00b0 65637469 6f6e202d 6663662d 70726f74  ection -fcf-prot
+ 00c0 65637469 6f6e0073 686f7274 20696e74  ection.short int
+ 00d0 0064656d 6f5f636f 6d626f00 72657375  .demo_combo.resu
+ 00e0 6c740069 6e646578 00496e6e 65725374  lt.index.InnerSt
+ 00f0 72756374 00636861 7200696e 6e657273  ruct.char.inners
+ 0100 00                                   .               
+Contents of section .debug_line_str:
+ 0000 73747275 63745f61 72726179 5f636f6d  struct_array_com
+ 0010 626f2e63 002f6d6e 742f632f 55736572  bo.c./mnt/c/User
+ 0020 732f7361 6972612f 4465736b 746f702f  s/saira/Desktop/
+ 0030 43594252 20363838 20536f66 74776172  CYBR 688 Softwar
+ 0040 65205265 76657273 6520456e 67696e65  e Reverse Engine
+ 0050 6572696e 672f5765 656b2033 2f4c6162  ering/Week 3/Lab
+ 0060 30335f4c 696e7578 5f616d64 363400    03_Linux_amd64. 
+
+Disassembly of section .init:
+
+0000000000001000 <_init>:
+    1000:	f3 0f 1e fa          	endbr64 
+    1004:	48 83 ec 08          	sub    rsp,0x8
+    1008:	48 8b 05 e9 2f 00 00 	mov    rax,QWORD PTR [rip+0x2fe9]        # 3ff8 <__gmon_start__>
+    100f:	48 85 c0             	test   rax,rax
+    1012:	74 02                	je     1016 <_init+0x16>
+    1014:	ff d0                	call   rax
+    1016:	48 83 c4 08          	add    rsp,0x8
+    101a:	c3                   	ret    
+
+Disassembly of section .plt:
+
+0000000000001020 <.plt>:
+    1020:	ff 35 e2 2f 00 00    	push   QWORD PTR [rip+0x2fe2]        # 4008 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:	f2 ff 25 e3 2f 00 00 	bnd jmp QWORD PTR [rip+0x2fe3]        # 4010 <_GLOBAL_OFFSET_TABLE_+0x10>
+    102d:	0f 1f 00             	nop    DWORD PTR [rax]
+
+Disassembly of section .plt.got:
+
+0000000000001030 <__cxa_finalize@plt>:
+    1030:	f3 0f 1e fa          	endbr64 
+    1034:	f2 ff 25 a5 2f 00 00 	bnd jmp QWORD PTR [rip+0x2fa5]        # 3fe0 <__cxa_finalize>
+    103b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .text:
+
+0000000000001040 <deregister_tm_clones>:
+    1040:	48 8d 3d d9 2f 00 00 	lea    rdi,[rip+0x2fd9]        # 4020 <completed.0>
+    1047:	48 8d 05 d2 2f 00 00 	lea    rax,[rip+0x2fd2]        # 4020 <completed.0>
+    104e:	48 39 f8             	cmp    rax,rdi
+    1051:	74 15                	je     1068 <deregister_tm_clones+0x28>
+    1053:	48 8b 05 96 2f 00 00 	mov    rax,QWORD PTR [rip+0x2f96]        # 3ff0 <_ITM_deregisterTMCloneTable>
+    105a:	48 85 c0             	test   rax,rax
+    105d:	74 09                	je     1068 <deregister_tm_clones+0x28>
+    105f:	ff e0                	jmp    rax
+    1061:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+    1068:	c3                   	ret    
+    1069:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+0000000000001070 <register_tm_clones>:
+    1070:	48 8d 3d a9 2f 00 00 	lea    rdi,[rip+0x2fa9]        # 4020 <completed.0>
+    1077:	48 8d 35 a2 2f 00 00 	lea    rsi,[rip+0x2fa2]        # 4020 <completed.0>
+    107e:	48 29 fe             	sub    rsi,rdi
+    1081:	48 89 f0             	mov    rax,rsi
+    1084:	48 c1 ee 3f          	shr    rsi,0x3f
+    1088:	48 c1 f8 03          	sar    rax,0x3
+    108c:	48 01 c6             	add    rsi,rax
+    108f:	48 d1 fe             	sar    rsi,1
+    1092:	74 14                	je     10a8 <register_tm_clones+0x38>
+    1094:	48 8b 05 4d 2f 00 00 	mov    rax,QWORD PTR [rip+0x2f4d]        # 3fe8 <_ITM_registerTMCloneTable>
+    109b:	48 85 c0             	test   rax,rax
+    109e:	74 08                	je     10a8 <register_tm_clones+0x38>
+    10a0:	ff e0                	jmp    rax
+    10a2:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+    10a8:	c3                   	ret    
+    10a9:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+00000000000010b0 <__do_global_dtors_aux>:
+    10b0:	f3 0f 1e fa          	endbr64 
+    10b4:	80 3d 65 2f 00 00 00 	cmp    BYTE PTR [rip+0x2f65],0x0        # 4020 <completed.0>
+    10bb:	75 2b                	jne    10e8 <__do_global_dtors_aux+0x38>
+    10bd:	55                   	push   rbp
+    10be:	48 83 3d 1a 2f 00 00 	cmp    QWORD PTR [rip+0x2f1a],0x0        # 3fe0 <__cxa_finalize>
+    10c5:	00 
+    10c6:	48 89 e5             	mov    rbp,rsp
+    10c9:	74 0c                	je     10d7 <__do_global_dtors_aux+0x27>
+    10cb:	48 8b 3d 46 2f 00 00 	mov    rdi,QWORD PTR [rip+0x2f46]        # 4018 <__dso_handle>
+    10d2:	e8 59 ff ff ff       	call   1030 <__cxa_finalize@plt>
+    10d7:	e8 64 ff ff ff       	call   1040 <deregister_tm_clones>
+    10dc:	c6 05 3d 2f 00 00 01 	mov    BYTE PTR [rip+0x2f3d],0x1        # 4020 <completed.0>
+    10e3:	5d                   	pop    rbp
+    10e4:	c3                   	ret    
+    10e5:	0f 1f 00             	nop    DWORD PTR [rax]
+    10e8:	c3                   	ret    
+    10e9:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+00000000000010f0 <frame_dummy>:
+    10f0:	f3 0f 1e fa          	endbr64 
+    10f4:	e9 77 ff ff ff       	jmp    1070 <register_tm_clones>
+
+00000000000010f9 <demo_combo>:
+    10f9:	f3 0f 1e fa          	endbr64 
+    10fd:	55                   	push   rbp
+    10fe:	48 89 e5             	mov    rbp,rsp
+    1101:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1105:	8b 15 19 2f 00 00    	mov    edx,DWORD PTR [rip+0x2f19]        # 4024 <index.1>
+    110b:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    110f:	48 63 d2             	movsxd rdx,edx
+    1112:	0f b6 44 d0 09       	movzx  eax,BYTE PTR [rax+rdx*8+0x9]
+    1117:	0f be c0             	movsx  eax,al
+    111a:	89 05 08 2f 00 00    	mov    DWORD PTR [rip+0x2f08],eax        # 4028 <result.0>
+    1120:	90                   	nop
+    1121:	5d                   	pop    rbp
+    1122:	c3                   	ret    
+
+Disassembly of section .fini:
+
+0000000000001124 <_fini>:
+    1124:	f3 0f 1e fa          	endbr64 
+    1128:	48 83 ec 08          	sub    rsp,0x8
+    112c:	48 83 c4 08          	add    rsp,0x8
+    1130:	c3                   	ret    
